@@ -11,9 +11,9 @@ const User = require('../views/users');
 
 
 app.set('port', process.env.PORT || 3000);
-//app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(__dirname + './views'));
 app.use('/', loginRoute);
@@ -31,7 +31,7 @@ mongoose.connect(mongo_uri, function (err){
 app.post('/register',(req,res)=>{
     const {username,password}= req.body;
     const user = new User({username, password});
-
+console.log(username,password);
     user.save(err => {
         if (err){
             res.status(500).send('ERROR AL REGISTRAR AL USUARIO');
