@@ -11,12 +11,18 @@
   "author": "Juan C Vanegas",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
+    "consolidate": "^0.16.0",
     "cors": "^2.8.5",
+    "css": "^3.0.0",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "html": "^1.0.0",
     "mongoose": "^6.3.4",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "swig": "^1.4.2",
+    "user": "^0.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
