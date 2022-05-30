@@ -1,0 +1,35 @@
+<!--ejs del game donde podremos indicar cuantas cartones deseamos tener-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+</head>
+
+<body>
+<img src="http://c.files.bbci.co.uk/1D09/production/_108633470_1-1.jpg" alt="width 50px">
+<h1>Game of Bingo</h1>
+<div>
+
+    how many bingo cards: <input type="text" id="txtInput" placeholder="Enter number of car">
+    <button onclick="draw">Dibujar carton</button>
+
+</div>
+<div>
+    <div>
+        <p id="pCount">No. of Card</p>
+    </div>
+    <br>
+    <div>
+        <div id="divBingoCard"></div>
+    </div>
+</div>
+<script src="../src/BingoCard.js"></script>
+<script src="../src/script.js"></script>
+
+</body>
+</html>
